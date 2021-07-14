@@ -14,7 +14,7 @@ RUN yarn run build
 FROM node:13.12.0-alpine
 # setting working dir
 WORKDIR /app
-
+# sample
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
 COPY --from=builder /app .
